@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Courses | CT & T Computer Education</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+<div class="logo">
+CT & T Computer Education
+</div>
+
+<nav id="nav">
+
+<a href="index.html">Home</a>
+<a href="courses.html">Courses</a>
+<a href="admissions.html">Admissions</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+
+</nav>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="courses-hero">
+
+<h1>Our Computer Courses</h1>
+
+<p>Industry-relevant courses designed to build real skills and career opportunities.</p>
+
+</section>
+
+
+<!-- FILTER SECTION -->
+
+<section class="course-filter">
+
+<h2 class="section-title">Explore Our Courses</h2>
+
+<div class="filter-buttons">
+
+<button class="filter-btn active" onclick="filterCourses('all')">All Courses</button>
+<button class="filter-btn" onclick="filterCourses('basic')">Basic Skills</button>
+<button class="filter-btn" onclick="filterCourses('accounting')">Accounting</button>
+<button class="filter-btn" onclick="filterCourses('programming')">Programming</button>
+<button class="filter-btn" onclick="filterCourses('database')">Database Technologies</button>
+
+</div>
+
+</section>
+
+
+<!-- COURSES GRID -->
+
+<section class="courses-section">
+
+<div class="courses-grid">
+
+<!-- BASIC SKILLS -->
+
+<div class="course-card basic">
+
+<div class="course-icon">💻</div>
+
+<h3>Fundamentals</h3>
+
+<p>Introduction to computers and digital basics.</p>
+
+<span class="duration">⏱ Duration: 4 Weeks</span>
+
+<a href="admissions.html?course=fundamentals" class="course-btn">
+Enroll Now
+</a>
+</div>
+
+<div class="course-card basic">
+
+<div class="course-icon">⌨️</div>
+
+<h3>DOS</h3>
+
+<p>Learn disk operating system commands and file management.</p>
+
+<span class="duration">⏱ Duration: 2 Weeks</span>
+
+<a href="admissions.html?course=dos" class="course-btn">
+Enroll Now
+</a>
+
+</div>
+
+<div class="course-card basic">
+
+<div class="course-icon">📊</div>
+
+<h3>MS - Office</h3>
+
+<p>Learn MS - Word, Excel, Powerpoint</p>
+
+<span class="duration">⏱ Duration: 5 Weeks</span>
+
+<a href="admissions.html?course=msoffice" class="course-btn">
+Enroll Now
+</a>
+
+</div>
+
+
+<!-- PROGRAMMING -->
+
+<div class="course-card programming">
+
+<div class="course-icon">🔧</div>
+
+<h3>C Language</h3>
+
+<p>Learn programming and logic and coding Fundamentals.</p>
+
+<span class="duration">⏱ Duration: 2 Months</span>
+
+<a href="admissions.html?course=c" class="course-btn">
+Enroll Now
+</a>
+
+</div>
+
+<div class="course-card programming">
+
+<div class="course-icon">⚙️</div>
+
+<h3>C++ programming</h3>
+
+<p>Object oriented programming using C++.</p>
+
+<span class="duration">⏱ Duration: 2 Months</span>
+
+<a href="admissions.html?course=cpp" class="course-btn">
+Enroll Now
+</a>
+
+</div>
+
+<div class="course-card programming">
+
+<div class="course-icon">📚</div>
+
+<h3>Data Structures</h3>
+
+<p>Algorithms, stacks, queues and trees.</p>
+
+<span class="duration">⏱ Duration: 1 Month</span>
+
+<a href="admissions.html?course=datastructures" class="course-btn">
+Enroll Now
+</a>
+
+</div>
+
+<div class="course-card programming">
+
+<div class="course-icon">☕</div>
+
+<h3>Java</h3>
+
+<p>Build applications using Java and OOP.</p>
+
+<span class="duration">⏱ Duration: 2 Months</span>
+
+<a href="admissions.html?course=java" class="course-btn">
+Enroll Now
+</a>
+
+</div>
+
+<div class="course-card programming">
+
+<div class="course-icon">🐍</div>
+
+<h3>Python</h3>
+
+<p>Programming for automation and development.</p>
+
+<span class="duration">⏱ Duration: 3 Months</span>
+
+<a href="admissions.html?course=python" class="course-btn">
+Enroll Now
+</a>
+
+</div>
+
+
+<!-- ACCOUNTING -->
+
+<div class="course-card accounting">
+
+<div class="course-icon">🧾</div>
+
+<h3>Tally</h3>
+
+<p>Accounting and financial management.</p>
+
+<span class="duration">⏱ Duration: 2 Months</span>
+
+<a href="admissions.html?course=tally" class="course-btn">
+Enroll Now
+</a>
+
+</div>
+
+
+<!-- DATABASE -->
+
+<div class="course-card database">
+
+<div class="course-icon">🗄️</div>
+
+<h3>SQL</h3>
+
+<p>Structured Query Language for database operations.</p>
+
+<span class="duration">⏱ Duration: 1 Month</span>
+
+<a href="admissions.html?course=sql" class="course-btn">
+Enroll Now
+</a>
+
+</div>
+
+<div class="course-card database">
+
+<div class="course-icon">📂</div>
+
+<h3>PL/SQL</h3>
+
+<p>Advanced SQL programming using Oracle.</p>
+
+<span class="duration">⏱ Duration: 1 Month</span>
+
+<a href="admissions.html?course=plsql" class="course-btn">
+Enroll Now
+</a>
+
+</div>
+
+<div class="course-card database">
+
+<div class="course-icon">🗃️</div>
+
+<h3>DBMS</h3>
+
+<p>Database management concepts.</p>
+
+<span class="duration">⏱ Duration: 1 Month</span>
+
+<a href="admissions.html?course=dbms" class="course-btn">
+Enroll Now
+</a>
+
+</div>
+
+<div class="course-card database">
+
+<div class="course-icon">🔗</div>
+
+<h3>RDBMS</h3>
+
+<p>Relational database concepts.</p>
+
+<span class="duration">⏱ Duration: 1 Month</span>
+
+<a href="admissions.html?course=rdbms" class="course-btn">
+Enroll Now
+</a>
+
+</div>
+
+<div class="course-card database">
+
+<div class="course-icon">🏛️</div>
+
+<h3>Oracle</h3>
+
+<p>Database management using Oracle technologies.</p>
+
+<span class="duration">⏱ Duration: 2 Months</span>
+
+<a href="admissions.html?course=oracle" class="course-btn">
+Enroll Now
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="who-can-learn">
+
+<h2 class="who-title">Who Should Take These Courses?</h2>
+
+<p class="who-subtitle">
+Our courses are designed for anyone who wants to learn computer skills and grow in the digital world.
+</p>
+
+<div class="who-grid">
+
+<div class="who-card">
+<span class="who-icon">🎓</span>
+<h3>Students</h3>
+<p>Build strong computer fundamentals for academic success.</p>
+</div>
+
+<div class="who-card">
+<span class="who-icon">💼</span>
+<h3>Job Seekers</h3>
+<p>Gain practical computer skills to improve job opportunities.</p>
+</div>
+
+<div class="who-card">
+<span class="who-icon">👨‍💻</span>
+<h3>Working Professionals</h3>
+<p>Upgrade technical knowledge and stay competitive.</p>
+</div>
+
+<div class="who-card">
+<span class="who-icon">🏢</span>
+<h3>Business Owners</h3>
+<p>Manage accounts, documents and digital tools efficiently.</p>
+</div>
+
+<div class="who-card">
+<span class="who-icon">🏠</span>
+<h3>Homemakers</h3>
+<p>Learn useful digital skills for daily life and personal growth.</p>
+</div>
+
+<div class="who-card">
+<span class="who-icon">🖥️</span>
+<h3>Beginners</h3>
+<p>Start learning computers from the basics with confidence.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="training-process">
+
+<h2 class="process-title">Our Training Approach</h2>
+
+<p class="process-subtitle">
+A simple step-by-step learning journey designed to build real computer skills.
+</p>
+
+<div class="process-container">
+
+<div class="process-step">
+<div class="step-number">1</div>
+<h3>Introduction</h3>
+<p>Start with basic computer concepts and fundamentals.</p>
+</div>
+
+<div class="process-step">
+<div class="step-number">2</div>
+<h3>Concept Learning</h3>
+<p>Understand theory with clear explanations.</p>
+</div>
+
+<div class="process-step">
+<div class="step-number">3</div>
+<h3>Hands-on Practice</h3>
+<p>Practice each topic using real computer systems.</p>
+</div>
+
+<div class="process-step">
+<div class="step-number">4</div>
+<h3>Assignments</h3>
+<p>Complete exercises and small practical tasks.</p>
+</div>
+
+<div class="process-step">
+<div class="step-number">5</div>
+<h3>Certification</h3>
+<p>Receive your course completion certificate.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CERTIFICATE -->
+
+<section class="certificate-section">
+
+<h2 class="certificate-title">🏅 Government Recognized Certification</h2>
+
+<p class="certificate-text">
+Students receive an official certificate after course completion.
+</p>
+
+<div class="certificate-card">
+
+<h3>Official Course Completion Certificate</h3>
+
+<p>Click below to preview a sample certificate.</p>
+
+<button class="certificate-btn" onclick="openCertificate()">
+View Sample Certificate
+</button>
+
+</div>
+
+</section>
+
+
+
+<!-- CERTIFICATE POPUP -->
+
+<div id="certificateModal" class="certificate-modal">
+
+<span class="close-cert" onclick="closeCertificate()">✖</span>
+
+<img src="images/certificate.jpg" alt="Certificate">
+
+</div>
+
+
+<!-- CTA -->
+
+<section class="courses-cta">
+
+<h2>Start Your Learning Journey Today</h2>
+
+<a href="contact.html" class="cta-btn">Enroll Now</a>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer class="site-footer">
+
+<div class="footer-container">
+
+<!-- INSTITUTE INFO -->
+
+<div class="footer-column">
+
+<h3>CT & T Computer Education</h3>
+
+<p>
+Empowering Students with Computer Skills Since 2001.
+Our mission is to provide practical computer education
+that leads to real career opportunities.
+</p>
+
+</div>
+
+
+<!-- CONTACT DETAILS -->
+
+<div class="footer-column">
+
+<h3>Contact Us</h3>
+
+<p>📍 Narayanaraju gari street (Vani fancy street), Tuni, Andhra Pradesh</p>
+<p>📞 +91 9030533799</p>
+<p>📧 e-mail: ctntcomputereducation.com</p>
+
+</div>
+
+
+<!-- COURSES -->
+
+<div class="footer-column">
+
+<h3>Popular Courses</h3>
+
+<ul>
+<li>MS Office</li>
+<li>Tally</li>
+<li>DCA / PGDCA</li>
+<li>Python Programming</li>
+<li>Java Programming</li>
+</ul>
+
+</div>
+
+
+<!-- QUICK LINKS -->
+
+<div class="footer-column">
+
+<h3>Quick Links</h3>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="course.html">Courses</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+</div>
+
+</div>
+
+
+<!-- BOTTOM COPYRIGHT -->
+
+<div class="footer-bottom">
+
+<p>
+© 2025 CT & T Computer Education | All Rights Reserved
+</p>
+
+</div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
