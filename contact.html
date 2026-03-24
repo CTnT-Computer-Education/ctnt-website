@@ -63,7 +63,8 @@ Have questions about our courses? Get in touch with us today.
 
 <p>
 CT & T Computer Education<br>
-Bhimavaram, Andhra Pradesh
+Narayanaraju gari Street (Vani Fancy Street),<br>
+Tuni, Andhra Pradesh
 </p>
 
 </div>
@@ -74,7 +75,7 @@ Bhimavaram, Andhra Pradesh
 
 <h3>Phone</h3>
 
-<p>+91 XXXXX XXXXX</p>
+<p>+91 9030533799</p>
 
 </div>
 
@@ -84,7 +85,11 @@ Bhimavaram, Andhra Pradesh
 
 <h3>Email</h3>
 
-<p>cttcomputereducation@gmail.com</p>
+<p>
+  <a href="mailto:ctntcomputereducation@gmail.com" class="email-link">
+    ctntcomputereducation@gmail.com
+  </a>
+</p>
 
 </div>
 
@@ -104,23 +109,19 @@ Bhimavaram, Andhra Pradesh
 
 <!-- CONTACT FORM -->
 
-<section class="contact-form-section">
+<!-- CONTACT FORM -->
 
-<h2 class="section-title">Send Us a Message</h2>
+<input type="hidden" name="type" value="contact">
 
-<p class="form-subtitle">
-Fill out the form below and we will get back to you shortly.
-</p>
+<form id="contactForm" class="contact-form">
 
-<form class="contact-form">
+<input type="text" name="name" placeholder="Your Name" required>
 
-<input type="text" placeholder="Your Name" required>
+<input type="tel" name="phone" placeholder="Phone Number" required>
 
-<input type="email" placeholder="Your Email" required>
+<input type="email" name="email" placeholder="Your Email">
 
-<input type="tel" placeholder="Phone Number" required>
-
-<textarea placeholder="Your Message"></textarea>
+<textarea name="message" placeholder="Your Message"></textarea>
 
 <button type="submit" class="contact-btn">
 Submit Message
@@ -128,7 +129,9 @@ Submit Message
 
 </form>
 
-</section>
+<p id="contactSuccess" class="success-message">
+✅ Thank you! Your message has been sent.
+</p>
 
 <!-- VISITING HOURS -->
 
@@ -225,7 +228,49 @@ that leads to real career opportunities.
 
 </footer>
 
-<script src="script.js"></script>
+<script>
+  /* ---------------------------------------------------------------- */
+
+/* -----------------SCRIPT FOR CONTACT.HTML------------------------ */
+
+/* ---------------------------------------------------------------- */
+
+/* CONTACT FORM SUBMISSION */
+
+/* CONTACT FORM SUBMISSION */
+
+document.addEventListener("DOMContentLoaded", function(){
+
+const contactScriptURL = "https://script.google.com/macros/s/AKfycbwPDmon6V4UQQc144t62nLIxKxZqjybYay5hJcdcusJPaWOb6nfu6ZspCG0f2_k3aI/exec";
+
+const form = document.getElementById("contactForm");
+
+if(form){  // 👈 important safety check
+
+form.addEventListener("submit", function(e){
+    e.preventDefault();
+
+    const formData = new FormData(form);
+
+    fetch(contactScriptURL, {
+        method: "POST",
+        body: formData
+    })
+    .then(res => res.text())
+    .then(() => {
+        document.getElementById("contactSuccess").style.display = "block";
+        form.reset();
+    })
+    .catch(err => {
+        console.error(err);
+        alert("Submission failed");
+    });
+});
+
+}
+
+});
+</script>
 
 </body>
 </html>

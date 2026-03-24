@@ -214,6 +214,31 @@ function closeCertificate(){
 document.getElementById("certificateModal").style.display="none";
 }
 
+
+/* ===== Why Section Animation ========*/
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  const items = document.querySelectorAll('.why-item');
+
+  function revealOnScroll() {
+    items.forEach(item => {
+      const top = item.getBoundingClientRect().top;
+
+      if (top < window.innerHeight - 50) {
+        item.classList.add('show');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', revealOnScroll);
+
+  // Run once on load
+  revealOnScroll();
+
+});
+
+
 /* ---------------------------------------------------------------- */
 
 /* -----------------SCRIPT FOR COURSES.HTML------------------------ */
@@ -239,3 +264,4 @@ course.style.display = "none";
 });
 
 }
+
