@@ -596,11 +596,9 @@ nav a:hover::after{
   color:#0FA4AF;
 }
 
-/* ===== MOBILE ===== */
-
 @media(max-width:768px){
 
-  nav{
+  #nav{
     display:none;
     position:absolute;
     top:90px;
@@ -611,43 +609,20 @@ nav a:hover::after{
     padding:20px;
     border-radius:12px;
     box-shadow:0 10px 25px rgba(0,0,0,0.3);
+    z-index:999; /* 🔥 important */
   }
 
-  /* 🔥 SHOW MENU WHEN ACTIVE */
-  nav.show{
+  #nav.show{
     display:flex;
   }
 
-  nav a{
+  #nav a{
     padding:12px 0;
     text-align:center;
   }
 
   .menu{
     display:block;
-  }
-
-  .hero-content h1{
-    font-size:36px;
-  }
-
-  .stats-container{
-    grid-template-columns:1fr;
-  }
-
-  .slide{
-    flex-direction:column;
-    text-align:center;
-  }
-
-  .course-icon{
-    width:65px;
-    height:65px;
-  }
-
-  .course-icon img{
-    width:50px;
-    height:50px;
   }
 }
 
