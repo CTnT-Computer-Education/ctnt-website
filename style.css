@@ -165,10 +165,8 @@ nav a:hover::after{
 }
 
 .small-text{
-  font-size:14px;
-  color:#666;
-  max-width:600px;
-  margin:10px auto;
+  font-size:30px;
+  color:red;
 }
 
 .hero-btn{
