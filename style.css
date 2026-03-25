@@ -159,14 +159,14 @@ nav a:hover::after{
   color: #b5f8f3;
 }
 
-.hero-content p{
+.hero-content p:not(.small-text){
   font-size:22px;
   margin-bottom:35px;
 }
 
 .hero-content p.small-text {
   font-size:14px;
-  color:#666;
+  color:#e9ebeb;
   max-width:600px;
   margin:10px auto;
 }
