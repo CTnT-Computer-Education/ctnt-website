@@ -1,8 +1,12 @@
 // MOBILE MENU
 function toggleMenu(){
-const nav = document.getElementById("nav");
-nav.classList.toggle("show");
+  document.querySelector("nav").classList.toggle("show");
 }
+document.querySelectorAll("nav a").forEach(link=>{
+  link.addEventListener("click",()=>{
+    document.querySelector("nav").classList.remove("show");
+  });
+});
 
 
 // COUNTER ANIMATION ON SCROLL
