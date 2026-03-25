@@ -49,6 +49,7 @@ header{
   align-items:center;
   padding:24px 40px;
   box-shadow:0 8px 25px rgba(0,0,0,0.4);
+  position:relative;
 }
 
 .logo{
@@ -601,15 +602,17 @@ nav a:hover::after{
   #nav{
     display:none;
     position:absolute;
-    top:90px;
-    right:5%;
-    width:90%;
+    top:100%;          /* 👈 directly below header */
+    left:0;
+    width:100%;        /* 👈 same width as header */
     background:var(--card);
+    
     flex-direction:column;
-    padding:20px;
-    border-radius:12px;
+    padding:15px 0;
+    border-radius:0 0 14px 14px;
+
     box-shadow:0 10px 25px rgba(0,0,0,0.3);
-    z-index:999; /* 🔥 important */
+    z-index:999;
   }
 
   #nav.show{
@@ -617,8 +620,9 @@ nav a:hover::after{
   }
 
   #nav a{
-    padding:12px 0;
+    padding:12px;
     text-align:center;
+    width:100%;
   }
 
   .menu{
