@@ -12,6 +12,15 @@
 
 <link rel="stylesheet" href="style.css">
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8MVW66E2BT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8MVW66E2BT');
+</script>
+
 </head>
 
 <body>
@@ -308,15 +317,17 @@ document.getElementById("admissionForm").addEventListener("submit", function(e) 
 
 </script>
 
-<a href="https://wa.me/919030533799?text=Hello%20I%20am%20interested%20in%20your%20courses" 
+<a href="https://wa.me/919030533799" 
    target="_blank" 
-   class="whatsapp-float">
+   class="whatsapp-float"
+   onclick="gtag('event', 'whatsapp_click', {
+     event_category: 'contact',
+     event_label: 'whatsapp_button'
+   });">
 
   <span class="whatsapp-tooltip">Chat with us</span>
-
   <img src="images/wicon.png" alt="WhatsApp">
 
 </a>
-
 </body>
 </html>
