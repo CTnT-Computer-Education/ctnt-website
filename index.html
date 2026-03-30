@@ -686,7 +686,11 @@ that leads to real career opportunities.
 <a href="https://wa.me/919030533799" 
    target="_blank" 
    class="whatsapp-float"
-   onclick="gtag('event', 'whatsapp_click');">
+   onclick="gtag('event', 'whatsapp_click', {
+     event_category: 'engagement',
+     event_label: 'whatsapp_button',
+     value: 1
+   });">
 
   <span class="whatsapp-tooltip">Chat with us</span>
 
